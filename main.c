@@ -17,4 +17,6 @@ int main(){
 
     printElements();
     printf("total: %i\n\n",element_create_count);
+    
+    return 0;
 }
