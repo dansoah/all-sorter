@@ -77,3 +77,10 @@ void printElements(){
 
 }
 
+int * elementRevertPos(int* elements,int pos_1, int pos_2){
+
+    int aux = elements[pos_1];
+    elements[pos_1] = elements[pos_2];
+    elements[pos_2] = aux;
+
+}
