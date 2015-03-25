@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "src/element.c"
+#include "src/selection_sort.c"
 
 int main(){
 
