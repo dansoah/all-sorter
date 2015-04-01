@@ -4,12 +4,12 @@ int * selectionSort(int * elements){
     int j;
     int lowest_element;
     int aux;
+    int total_elements = getElementCount();
 
-    for(i=0;i<=getElementCount()-1;i++){
-
+    for(i=0;i<=total_elements-1;i++){
         lowest_element = i;
-        for(j=i+1;j<getElementCount();j++){
-            if(elements[lowest_element] > elements[j]){
+        for(j=(i+1);j<total_elements;j++){
+            if(elements[j] < elements[lowest_element]){
 
                 lowest_element = j;
 
@@ -17,7 +17,7 @@ int * selectionSort(int * elements){
 
             //Something changed?
             if(lowest_element != i){
-                elementRevertPos(&elements, i, lowest_element);
+                elements = elementRevertPos(elements, i, lowest_element);
             }
 
         }//for(j=i+1;j<getElementCount();j++)
