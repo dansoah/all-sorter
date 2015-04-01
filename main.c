@@ -6,7 +6,7 @@ int main(){
 
     srand (time(NULL));
 
-    int element_create_count = rand();
+    int element_create_count = 15;//rand();
     int i;
     int element;
 
@@ -15,8 +15,11 @@ int main(){
         addElement(element);
     }
 
+    printf("Before:\r\n");
     printElements();
-    printf("total: %i\n\n",element_create_count);
-    
+
+    printf("\n\nAfter:\r\n");
+    selectionSort(elements);
+    printElements();
     return 0;
 }
