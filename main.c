@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "src/element.c"
 #include "src/selection_sort.c"
+#include "src/insertion_sort.c"
 
 int main(){
 
