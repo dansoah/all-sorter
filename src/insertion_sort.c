@@ -18,4 +18,6 @@ int * insertionSort(int * elements){
         elements[j+1] = lowest;
 
     }
+
+    return elements;
 }
