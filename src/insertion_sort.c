@@ -10,7 +10,7 @@ int * insertionSort(int * elements){
         lowest = elements[i];
         j = i - 1;
 
-        while(j>=0 && lowest < elements[i]){
+        while(j>=0 && lowest < elements[j]){
             elements[j+1] = elements[j];
             j--;
         }
@@ -21,3 +21,4 @@ int * insertionSort(int * elements){
 
     return elements;
 }
+
