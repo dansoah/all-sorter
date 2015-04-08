@@ -2,12 +2,11 @@ int * bubbleSort(int * elements){
 
     int i;
     int j;
-    int lowest_element;
     int total_elements = getElementCount();
 
-    for(i=total_elements -1; i>=1;i--){
+    for(i=0; i < (total_elements);i++){
 
-        for(j=0;j<=1;j++){
+        for(j=0;j < (total_elements - i - 1);j++){
 
             if(elements[j] > elements[j+1]){
 
