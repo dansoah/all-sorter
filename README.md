@@ -4,7 +4,7 @@
 ## What it is?
 All-Sorter is an simple C program written for my Data Structure And Algorithim Project class. Actually, it's not big deal, this whole program is developed just for fun :D
 
-## What it do?
+## What can it do?
 It can ordenate numbers using many ordering algorithims:
 
 1. Bubble Sort
