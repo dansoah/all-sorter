@@ -1,5 +1,5 @@
 # all-sorter [![Build Status](https://travis-ci.org/dansoah/all-sorter.svg?branch=master)](https://travis-ci.org/dansoah/all-sorter)
-=
+
 
 ## What it is?
 All-Sorter is an simple C program written for my Data Structure And Algorithim Project class. Actually, it's not big deal, this whole program is developed just for fun :D
