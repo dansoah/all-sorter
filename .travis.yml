@@ -1,2 +1,2 @@
-language: php
+language: c
 compiler: gcc
