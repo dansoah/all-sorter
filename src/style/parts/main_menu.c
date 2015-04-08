@@ -2,6 +2,7 @@ int mainMenu(){
     int main_color = DEFAULT_COLOR;
     int auto_color = DEFAULT_COLOR;
     int manual_color = DEFAULT_COLOR;
+    int exit_color = DEFAULT_COLOR;
     int exit = 0;
     int selected = 1;
     int key = 0;
@@ -11,12 +12,23 @@ int mainMenu(){
 
         if(selected == 1){
             auto_color = SELECTED_COLOR;
+            exit_color = DEFAULT_COLOR;
             manual_color = DEFAULT_COLOR;
         }
 
         if(selected == 2){
             manual_color = SELECTED_COLOR;
+            exit_color = DEFAULT_COLOR;
             auto_color = DEFAULT_COLOR;
+        }
+
+        if(selected == 3){
+
+
+            exit_color = SELECTED_COLOR;
+             manual_color = DEFAULT_COLOR;
+            auto_color = DEFAULT_COLOR;
+
         }
 
         echo(" ===================\n",main_color);
@@ -26,6 +38,8 @@ int mainMenu(){
         echo("|===================|\n",main_color);
         echo("|    MANUALMENTE    |\n",manual_color);
         echo("|===================|\n",main_color);
+        echo("|       SAIR        |\n",exit_color);
+        echo("|===================|\n",main_color);
 
         key = getch();
 
@@ -34,29 +48,19 @@ int mainMenu(){
                 exit = 1;
                 break;
             case 72: // up arrow key
-                if(selected == 1){
-
-                    selected = 2;
-
-                }else{
-
-                    selected = 1;
-
-                }
+                selected --;
                 break;
             case 80: //down arrow key
-                if(selected == 2){
-
-                    selected = 1;
-
-                }else{
-
-                    selected = 2;
-
-                }
+                selected ++;
                 break;
+        }
 
+        if(selected < 1){
+            selected = 3;
+        }
 
+        if(selected > 3){
+            selected = 1;
         }
 
         system("CLS");
