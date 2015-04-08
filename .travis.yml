@@ -1,2 +1,5 @@
 language: c
 compiler: gcc
+
+before_script: gcc tests.c -o sorterTester
+script: ./sorterTester
