@@ -9,6 +9,7 @@ void addElementAtEnd(int element){
     aux_element = (int*) malloc(getElementCount() * sizeof(int));
     if(aux_element == NULL){
         printf("There's not enough space to add \"%i\"!",element);
+        exit(1);
     }
 
     for(i = 0 ; i<=getElementCount()-1;i++){
@@ -21,6 +22,7 @@ void addElementAtEnd(int element){
     elements = (int*) malloc((getElementCount() +1) * sizeof(int));
     if(elements == NULL){
         printf("There's not enough space to add \"%i\"!",element);
+        exit(1);
     }
 
     for(i = 0 ; i<=getElementCount()-1;i++){

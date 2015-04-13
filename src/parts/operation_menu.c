@@ -1,4 +1,4 @@
-void operationMenu(){
+int operationMenu(){
     int selected = 1;
     int exit = 0;
     do{

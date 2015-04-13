@@ -63,7 +63,7 @@ int mainMenu(){
             selected = 1;
         }
 
-        system("CLS");
+        clearScreen();
 
     }while(exit == 0);
 
